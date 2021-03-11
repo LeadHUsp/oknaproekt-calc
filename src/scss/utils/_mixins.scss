@@ -1,0 +1,51 @@
+@mixin fontLink($name, $path, $font-name, $weight, $style) {
+  @font-face {
+    font-family: $name;
+    src: url("#{$path}#{$font-name}.woff2") format("woff2"),
+      url("#{$path}#{$font-name}.woff") format("woff"),
+      url("#{$path}#{$font-name}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+@mixin make_container($breakpoints) {
+  @each $bp, $size in $breakpoints {
+    @media screen and (min-width: $size) {
+      @if ($bp==sm) {
+        .container {
+          max-width: 600px;
+        }
+      }
+
+      @if ($bp==md) {
+        .container {
+          max-width: 720px;
+        }
+      }
+
+      @if ($bp==lg) {
+        .container {
+          max-width: 960px;
+        }
+      }
+
+      @if ($bp==xl) {
+        .container {
+          max-width: 1096px;
+        }
+      }
+
+      @if ($bp==xxl) {
+        .container {
+          max-width: 1200px;
+        }
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

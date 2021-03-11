@@ -1,0 +1,4 @@
+node_modules
+app
+dist
+src/scss/style.scss
