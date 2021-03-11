@@ -1,0 +1,784 @@
+/*Header-new*/
+
+.new-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #dd0060 !important;
+  padding: 15px 45px !important;
+  font-family: 'Uni Neue Bold';
+  color: #fff !important;
+  background: #dd0060 !important;
+  -webkit-transition: background 0.3s, color 0.3s;
+  -o-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+  max-width: 270px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.new-btn:active,
+.new-btn:focus,
+.new-btn:hover {
+  border: 1px solid #dd0060 !important;
+  outline: 0;
+  background: 0 0 !important;
+  color: #dd0060 !important;
+}
+.new-btn.green {
+  border: 1px solid #37a58c !important;
+  background: #37a58c !important;
+}
+.new-btn.green:active,
+.new-btn.green:focus,
+.new-btn.green:hover {
+  border: 1px solid #37a58c !important;
+  background: 0 0 !important;
+  color: #37a58c !important;
+}
+.new-btn-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #37a58c;
+  padding: 7px 22px 9px;
+  font-family: 'Uni Neue Bold';
+  color: #fff;
+  background: #37a58c;
+  -webkit-transition: background 0.3s, color 0.3s;
+  -o-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+}
+.new-btn-svg:active,
+.new-btn-svg:focus,
+.new-btn-svg:hover {
+  outline: 0;
+  background: #fff;
+  color: #37a58c;
+}
+.new-btn-svg:active svg,
+.new-btn-svg:focus svg,
+.new-btn-svg:hover svg {
+  fill: #37a58c;
+}
+.new-btn-svg svg {
+  margin-right: 14px;
+  fill: #fff;
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.new-btn-svg--red {
+  background: #dd0060;
+  border-color: #dd0060;
+}
+.new-btn-svg--red:active,
+.new-btn-svg--red:focus,
+.new-btn-svg--red:hover {
+  color: #dd0060;
+}
+.new-btn-svg--red:active svg,
+.new-btn-svg--red:focus svg,
+.new-btn-svg--red:hover svg {
+  fill: #dd0060;
+}
+.new-btn-after {
+  position: relative;
+  display: inline-block;
+  padding: 15px 60px 17px 35px;
+  border: 1px solid #dd0060;
+  background: #dd0060;
+  color: #fff;
+  text-decoration: none;
+  font: 18px/24px 'Uni Neue Heavy';
+  -webkit-transition: background 0.3s, color 0.3s;
+  -o-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+}
+.new-btn-after::after {
+  content: '';
+  position: absolute;
+  right: 28px;
+  top: 23px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: right 0.3s, border-color 0.3s;
+  -o-transition: right 0.3s, border-color 0.3s;
+  transition: right 0.3s, border-color 0.3s;
+}
+.new-btn-after:active,
+.new-btn-after:focus,
+.new-btn-after:hover {
+  background: #fff;
+  color: #dd0060;
+}
+.new-btn-after:active::after,
+.new-btn-after:focus::after,
+.new-btn-after:hover::after {
+  right: 24px;
+  border-color: #dd0060;
+}
+.new-header .stellarnav ul,
+.new-header .stellarnav.mobile ul {
+  background: #3e3c3c;
+}
+.new-header {
+  color: #000;
+  font: 16px/22px 'Uni Neue';
+}
+.new-header__top {
+  padding: 25px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.new-header__logo {
+  max-width: 165px;
+  margin-right: 20px;
+}
+.new-header__logo-img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.new-header__slogan {
+  font: 14px/19px 'Uni Neue';
+  text-align: center;
+  margin-bottom: 0;
+  color: #000;
+}
+.new-header__slogan span {
+  font-family: 'Uni Neue Bold';
+}
+.new-header__rehau {
+  max-width: 118px;
+  overflow: hidden;
+  height: 50px;
+}
+.new-header__rehau svg {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.new-header__social-list {
+  list-style: none;
+  margin: 0 0 0 40px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.new-header__social-item {
+  display: inline-block;
+}
+.new-header__social-item:not(:last-child) {
+  margin-right: 12px;
+}
+.new-header__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #37a58c;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.new-header__social-link:focus,
+.new-header__social-link:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.new-header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 430px;
+  margin-right: 50px;
+}
+.new-header__info-where {
+  color: #3e3c3c;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+}
+.new-header__info-where span {
+  font-family: 'Uni Neue Bold';
+  color: #000;
+}
+.new-header__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: auto;
+}
+.new-header__info-item {
+  font: 14px/18px 'Uni Neue';
+  color: #3e3c3c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  width: calc(50% - 10px);
+}
+.new-header__info-item strong {
+  padding-left: 5px;
+}
+.new-header__info-item svg {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+.new-header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 40px;
+}
+.new-header__elem-wrapper {
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.new-header__free-m {
+  margin-right: 50px;
+}
+.new-header__dropbtn {
+  background: #f4f4f4;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  width: 160px;
+  padding: 8px 15px;
+}
+.new-header__dropbtn::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  border: 3px solid transparent;
+  border-top: 6px solid #c4c4c4;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.new-header__dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 12px;
+}
+.new-header__cities-list {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+.new-header__cities-item {
+  display: block;
+}
+.new-header__cities-item a {
+  display: block;
+  padding: 12px 16px;
+  color: #000;
+  text-decoration: none;
+}
+.new-header__cities-item a:hover {
+  background-color: #f1f1f1;
+}
+.new-header__dropdown.open .new-header__cities-list {
+  display: block;
+  z-index: 10000;
+}
+.new-header__dropdown:focus .new-header__dropbtn,
+.new-header__dropdown:hover .new-header__dropbtn {
+  background: #37a58c;
+}
+.new-header__cities {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.new-header__phone {
+  font: 21px/28px 'Uni Neue';
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.new-header__phone span {
+  font: 21px/28px 'Uni Neue Bold';
+}
+.new-header__phone svg {
+  margin-left: 10px;
+}
+.new-header__callback {
+  background: #dd0060;
+  padding: 9px 28px 10px;
+}
+.stellarnav > ul > li.mob-cities {
+  display: none;
+}
+.new-header .stellarnav.desktop > ul > li.mega > ul {
+  background-color: #3e3c3c;
+}
+@media screen and (max-width: 1850px) {
+  .new-header__info-item {
+    width: 100%;
+  }
+  .new-header__elem-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .new-header__free-m {
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-top: auto;
+  }
+  .new-header__cities {
+    margin-bottom: 5px;
+  }
+  .new-btn-svg--red {
+    margin-top: auto;
+  }
+  .new-header__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .new-header__social-list {
+    margin: auto 0 0 0;
+  }
+  .new-header__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .new-header__call {
+    margin-left: 0;
+  }
+  .new-header__top {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .new-header__info,
+  .new-header__logo,
+  .new-header__social {
+    margin-right: 0;
+  }
+  .new-header__top {
+    padding: 12px 30px;
+  }
+  .new-header__elem-wrapper {
+    -ms-flex-item-align: unset;
+    -ms-grid-row-align: unset;
+    align-self: unset;
+  }
+  .new-header__info-where {
+    margin-top: 0;
+  }
+  .new-header__cities {
+    margin-bottom: auto;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .new-header__info-where {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .new-header {
+    font: 14px/28px 'Uni Neue';
+  }
+  .new-header__phone {
+    margin-bottom: 0;
+    font: 16px/18px 'Uni Neue';
+  }
+  .new-header__info {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .new-header__logo {
+    max-width: 140px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .new-header__slogan {
+    font-size: 13px;
+  }
+  .rehau-logo {
+    width: 80px;
+    height: auto;
+  }
+  .new-header__social-item:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .new-header .stellarnav > ul > li > a {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .new-header .stellarnav .menu-toggle span.bars span {
+    background: #6b6b6b;
+  }
+  .new-header__info,
+  .new-header__social {
+    display: none;
+  }
+  .new-header__logo-img {
+    margin-bottom: 0;
+  }
+  .new-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .new-header__top {
+    padding: 12px 0 12px 15px;
+  }
+  .new-header__elem-wrapper,
+  .new-header__free-m,
+  .new-header__slogan,
+  .new-header__top .new-btn-svg--red {
+    display: none;
+  }
+  .new-header__logo {
+    max-width: 100px;
+  }
+  .stellarnav.mobile.active .mob-cities {
+    display: block;
+  }
+  .stellarnav li.mob-cities {
+    padding: 15px;
+  }
+  .mob-cities .new-header__dropdown {
+    position: relative;
+  }
+  .mob-cities .new-header__cities-list {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 30000 !important;
+  }
+  .mob-cities .new-header__cities span {
+    color: #fff;
+  }
+  .stellarnav.mobile > ul > li > a.dd-toggle {
+    background-color: #dd0060;
+  }
+}
+@media screen and (max-width: 640px) {
+  .new-header__phone,
+  .new-header__phone span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .new-header__top {
+    padding: 5px 0 5px 15px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .new-header__call {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+.mp-wrapper .white-popup {
+  position: relative;
+  background: #fff;
+  padding: 35px 109px;
+  width: auto;
+  max-width: 694px;
+  margin: 20px auto;
+  text-align: center;
+}
+.mp-wrapper .white-popup .title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  margin: 0 0 10px;
+}
+.mp-wrapper .white-popup .subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #000;
+}
+.mp-wrapper .white-popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 30px 0 0;
+}
+.mp-wrapper .white-popup .form-box {
+  margin: 0 0 13px;
+  position: relative;
+}
+.mp-wrapper .white-popup__wrapper .form-box {
+  width: 48%;
+}
+.mp-wrapper .white-popup__wrapper p {
+  display: none;
+}
+.mp-wrapper .white-popup .input_field {
+  border: 1px solid #c4c4c4;
+  height: 52px;
+  padding: 0 10px;
+}
+.mp-wrapper .white-popup .textarea {
+  border: 1px solid #c4c4c4;
+  height: 69px;
+  padding: 15px 10px;
+  resize: none;
+}
+.mp-wrapper .white-popup .input_field,
+.mp-wrapper .white-popup textarea {
+  padding-left: 30px !important;
+  width: 100%;
+  outline: 0;
+}
+.mp-wrapper .white-popup input[type='submit'] {
+  outline: 0;
+}
+.mp-wrapper .input_file_label svg {
+  margin-left: 10px;
+}
+.mp-wrapper .white-popup input::-webkit-input-placeholder,
+.mp-wrapper .white-popup textarea::-webkit-input-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input::-moz-placeholder,
+.mp-wrapper .white-popup textarea::-moz-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input:-ms-input-placeholder,
+.mp-wrapper .white-popup textarea:-ms-input-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input::-ms-input-placeholder,
+.mp-wrapper .white-popup textarea::-ms-input-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input::-webkit-input-placeholder,
+.mp-wrapper .white-popup textarea::-webkit-input-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input::-moz-placeholder,
+.mp-wrapper .white-popup textarea::-moz-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input:-ms-input-placeholder,
+.mp-wrapper .white-popup textarea:-ms-input-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input::-ms-input-placeholder,
+.mp-wrapper .white-popup textarea::-ms-input-placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup input::placeholder,
+.mp-wrapper .white-popup textarea::placeholder {
+  font: 16px/22px 'Uni Neue';
+  color: #c1c1c1;
+}
+.mp-wrapper .white-popup__politics {
+  font-size: 12px;
+}
+.mp-wrapper .white-popup .input_file {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 0.4px;
+  height: 0.4px;
+}
+.mp-wrapper .mfp-close:active,
+.mp-wrapper .mfp-close:focus,
+.mp-wrapper .mfp-close:hover {
+  background-color: transparent;
+}
+.input_file_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #dd0060;
+  text-decoration: underline;
+  margin: 0 0 30px;
+  font: 16px/22px 'Uni Neue';
+}
+@media screen and (max-width: 640px) {
+  .mp-wrapper .white-popup {
+    padding: 30px;
+  }
+  .mp-wrapper .white-popup .title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .mp-wrapper .white-popup__wrapper .form-box {
+    width: 100%;
+  }
+}
+#new-main .msk-spoilers .container {
+  max-width: 1200px;
+}
+.msk-spoilers {
+  padding: 50px 0;
+}
+.msk-spoilers .title {
+  margin: 0 auto 30px;
+}
+.msk-spoilers .spoiler {
+  width: 100%;
+  margin: 25px 0;
+}
+.msk-spoilers .spoiler__title {
+  position: relative;
+  cursor: pointer;
+  padding: 0 30px 0 0;
+  font-size: 26px;
+}
+.msk-spoilers .spoiler__title:hover {
+  color: #dd0060;
+}
+.msk-spoilers .spoiler__title.active:after {
+  -webkit-transform: rotate(315deg) translate(0, -50%);
+  -ms-transform: rotate(315deg) translate(0, -50%);
+  transform: rotate(315deg) translate(0, -50%);
+}
+.msk-spoilers .spoiler__title.active {
+  color: #dd0060;
+}
+.msk-spoilers .spoiler__title:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #dd0060;
+  border-right: 2px solid #dd0060;
+  -webkit-transform: rotate(135deg) translate(0, 50%);
+  -ms-transform: rotate(135deg) translate(0, 50%);
+  transform: rotate(135deg) translate(0, 50%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.msk-spoilers .spoiler__text {
+  display: none;
+}
+@media (max-width: 480px) {
+  .msk-spoilers .spoiler__title {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .msk-spoilers {
+    padding: 30px 0;
+  }
+}

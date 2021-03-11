@@ -1,8 +1,8 @@
 //utils
-@import "utils/_reset", "utils/_vars", "utils/_mixins";
-
+@import 'utils/_reset', 'utils/_vars', 'utils/_mixins';
+@import './site';
 // blocks
-@import "project-calc";
+@import 'project-calc';
 
 @include make_container($breakpoints);
 
