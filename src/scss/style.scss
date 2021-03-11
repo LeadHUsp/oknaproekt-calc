@@ -1,0 +1,41 @@
+//utils
+@import "utils/_reset", "utils/_vars", "utils/_mixins";
+
+// blocks
+@import "project-calc";
+
+@include make_container($breakpoints);
+
+html,
+body {
+  background: #fff;
+  color: $text;
+  overflow-x: hidden;
+}
+
+.img-full {
+  width: 100%;
+  height: auto;
+}
+.seo-text-container {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: $text;
+  padding-top: 40px;
+  p {
+    margin-bottom: 15px;
+  }
+}
+hr {
+  background: #e1e1e1;
+  height: 1px;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
