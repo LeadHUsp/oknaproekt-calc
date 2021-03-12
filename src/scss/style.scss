@@ -1,8 +1,8 @@
 //utils
-@import 'utils/_reset', 'utils/_vars', 'utils/_mixins';
-@import './site';
+@import "utils/_reset", "utils/_vars", "utils/_mixins";
+@import "./site";
 // blocks
-@import 'project-calc';
+@import "project-calc";
 
 @include make_container($breakpoints);
 
@@ -11,6 +11,7 @@ body {
   background: #fff;
   color: $text;
   overflow-x: hidden;
+  position: relative;
 }
 
 .img-full {

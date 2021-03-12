@@ -1,28 +1,30 @@
 div(id="form-project-calc").popup-form-calc.white-popup.mfp-hide
+    .popup-form-calc__title Выбраны параметры
     .popup-form-calc 
         .form__group
             label(for="") Вид остекления
-            input(type="text" placeholder="wwww") 
+            input(type="text" placeholder="" value="Не выбрано" id="output-typeof-glasses") 
         .form__group
-            label(for="") освещение
-            input(type="text" placeholder="wwww")
+            label(for="") Освещение
+            input(type="text" placeholder="" value="Не выбрано" id="output-typeof-light")
         .form__group
             label(for="") обшивка парапета
-            input(type="text" placeholder="wwww")
+            input(type="text" placeholder="Тип" value="Не выбрано" id="output-siding-type")
+            input(type="text" placeholder="Цвет" value="Не выбрано" id="output-siding-color")
         .form__group
             label(for="") Утепление
-            input(type="text" placeholder="wwww")
+            input(type="text" placeholder="" value="Не выбрано" id='output-typeof-warming')
         .form__group
             label(for="") Шкаф
-            input(type="text" placeholder="wwww")
+            input(type="text" placeholder="" value="Не выбрано" id="output-typeof-furniture")
         .form__group
             label(for="") Внутрення отделка
-            input(type="text" placeholder="тип")
-            input(type="text" placeholder="цвет")
+            input(type="text" placeholder="тип" value="Не выбрано"  id="output-walss-type")
+            input(type="text" placeholder="цвет" value="Не выбрано"  id="output-walss-color")
         .form__group
             label(for="") Отделка пола
-             input(type="text" placeholder="тип")
-            input(type="text" placeholder="цвет")
+            input(type="text" placeholder="тип" value="Не выбрано" id="output-floor-type")
+            input(type="text" placeholder="цвет" value="Не выбрано" id="output-floor-color")
         .form__group
             label(for="") Теплый пол
-            input(type="text" placeholder="wwww")
+            input(type="text" placeholder="" value="Не выбрано" id="output-warming-floor-opt")

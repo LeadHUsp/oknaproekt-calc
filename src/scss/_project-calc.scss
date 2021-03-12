@@ -122,7 +122,7 @@
   margin-right: 11px;
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -178,7 +178,7 @@
 }
 
 .project-calc__round-active:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -237,6 +237,7 @@
   text-align: right;
   padding-top: 15px;
 }
+
 //popup
 .mp-wrapper .white-popup {
   position: relative;
@@ -247,7 +248,7 @@
   margin: 20px auto;
   text-align: center;
 }
-.mp-wrapper .white-popup .title {
+.popup-form-calc__title {
   font-size: 32px;
   font-weight: 400;
   line-height: 43px;

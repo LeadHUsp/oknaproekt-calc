@@ -52,7 +52,7 @@
                         .project-calc__label-name От пола до потолка
                 .project-calc__group 
                     .project-calc__name Освещение  
-                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light" checked="true").project-calc__radio
+                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light" ).project-calc__radio
                     label(for="radio-typeof-light-ceiling" data-group='typeof-light' data-src="img/project-calc/project-calc-light-top.png").project-calc__label.project-calc__label-bottom  
                         <svg class="project-calc__icon-full" width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.5 0.5C9.90202 0.5 0.5 5.31294 0.5 11.25V15.25C0.75 18.6667 5.3 25.5 21.5 25.5C37.7 25.5 42.25 19.1667 42.5 16V11.25C42.5 5.31294 33.098 0.5 21.5 0.5Z" fill="#C4C4C4" fill-opacity="0.5"/>
@@ -85,7 +85,7 @@
                 div(id="typeof-siding-control").project-calc__group 
                     .project-calc__name Обшивка парапета  
                     .project-calc__tab-nav
-                        div(data-tab="metall").project-calc__label.project-calc__label-active 
+                        div(data-tab="metall").project-calc__label 
                             <svg width="59" height="45" viewBox="0 0 59 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M42.6868 2.45161L58.0121 43.0259V44.4579H45.0813L39.8133 38.7298H19.6988L13.9518 44.4579H0.542175V43.0259L17.7831 2.45161H24.9669L26.8825 0.542236H34.0663L36.4609 2.45161H42.6868Z" fill="#C4C4C4" fill-opacity="0.5"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6585 0H34.256L36.6505 1.90938H43.0615L58.5542 42.9268V45H44.8434L39.5753 39.2719H19.9228L14.1759 45H0V42.9154L17.4244 1.90938H24.7428L26.6585 0ZM24.2579 2.99371H18.1418L1.36164 42.4836H13.5372L24.2579 2.99371ZM15.0069 41.2087L19.1985 37.0308L26.0106 2.17668L25.4522 2.73333L15.0069 41.2087ZM27.329 1.08434L20.3572 36.7555H39.1797L33.6023 1.08434H27.329ZM34.817 1.83425L35.9709 2.7543L44.1393 41.2005L40.3235 37.0516L34.817 1.83425ZM39.5753 37.8398H19.9228L19.574 38.1875H39.8951L39.5753 37.8398ZM44.9995 43.568L45.3193 43.9157H57.4699V43.568H44.9995ZM57.2277 42.4836H45.5204L37.1303 2.99371H42.312L57.2277 42.4836ZM14.0766 43.568H1.08434V43.9157H13.7278L14.0766 43.568Z" fill="#BABABA"/>
@@ -98,23 +98,23 @@
                             </svg>
                             .project-calc__label-name Сайдинг
                     .project-calc__tab-content
-                        div(data-tab-content="metall").project-calc__tab-item.project-calc__tab-active 
-                            button(data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-metall.png").project-calc__round.project-calc__round-active
+                        div(data-tab-content="metall").project-calc__tab-item 
+                            button(data-value="Стандарт" data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-metall.png").project-calc__round
                                 <img class="project-calc__palette" src="img/project-calc/metall-siding.jpg" alt="">
                         div(data-tab-content="siding").project-calc__tab-item 
-                            button(data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-grey.png").project-calc__round
+                            button(data-value="Серый" data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-grey.png").project-calc__round
                                 div(style={'background-color':"#D9D9D9"}).project-calc__palette.project-calc__palette-siding
-                            button(data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-beige.png").project-calc__round
+                            button(data-value="Бежевый" data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-beige.png").project-calc__round
                                 div(style={'background-color':"#E5D8C4"}).project-calc__palette.project-calc__palette-siding
-                            button(data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-white.png").project-calc__round
+                            button(data-value="Белый" data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-white.png").project-calc__round
                                 div(style={'background-color':"#EDEDED"}).project-calc__palette.project-calc__palette-siding
-                            button(data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-green.png").project-calc__round
+                            button(data-value="Салатовый" data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-green.png").project-calc__round
                                 div(style={'background-color':"#DBE4A3"}).project-calc__palette.project-calc__palette-siding
-                            button(data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-blue.png").project-calc__round
+                            button(data-value="Голубой лёд" data-group="typeof-siding" data-src="img/project-calc/glass-default/project-calc-default-siding-blue.png").project-calc__round
                                 div(style={'background-color':"#D5EAEA"}).project-calc__palette.project-calc__palette-siding
                 .project-calc__group 
                     .project-calc__name Утепление  
-                    input(id="radio-typeof-warming-default" type="radio" name="typeof-warming" checked="true").project-calc__radio
+                    input(id="radio-typeof-warming-default" type="radio" name="typeof-warming" ).project-calc__radio
                     label(for="radio-typeof-warming-default" data-group="typeof-warming" data-src="img/project-calc/glass-default/project-calc-default-warming-default.png" data-src-v2="img/project-calc/glass-france/project-calc-france-warming-default.png").project-calc__label.active 
                         <svg width="64" height="30" viewBox="0 0 64 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.1764 6.08813H54.7927V13.2831H12.1764V6.08813Z" fill="#C4C4C4" fill-opacity="0.5"/>
@@ -148,9 +148,9 @@
                         </svg> 
                         .project-calc__label-name Премиум
                 .project-calc__group 
-                    .project-calc__name Шкаф  
-                    input(id="radio-typeof-furniture-closet" type="radio" name="typeof-furniture" checked="true").project-calc__radio
-                    label(for="radio-typeof-furniture-closet" data-group='typeof-furniture' data-src="img/project-calc/glass-default/project-calc-default-cupboard.png" data-src-v2="img/project-calc/glass-france/project-calc-france-cupboard.png").project-calc__label.project-calc__label-bottom.active  
+                    .project-calc__name Мебель  
+                    input(id="radio-typeof-furniture-closet" type="radio" name="typeof-furniture" ).project-calc__radio
+                    label(for="radio-typeof-furniture-closet" data-group='typeof-furniture' data-src="img/project-calc/glass-default/project-calc-default-cupboard.png" data-src-v2="img/project-calc/glass-france/project-calc-france-cupboard.png").project-calc__label.project-calc__label-bottom  
                         <svg class="project-calc__icon-full" width="44" height="61" viewBox="0 0 44 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.0898438 0H43.3326V58.9674H0.0898438V0Z" fill="#C4C4C4" fill-opacity="0.5"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M42.459 0.873591H0.963435V58.0938H42.459V0.873591ZM0.0898438 0V58.9674H43.3326V0H0.0898438Z" fill="#BABABA"/>
@@ -198,24 +198,24 @@
                 .project-calc__inside
                     img(id="project-calc__inside-img" src="img/project-calc/glass-default/project-calc-default-inside-warm.png", alt="").img-full
                 .project-calc__part.project-calc__light
-                    img( id="project-calc__light-img" src="img/project-calc/project-calc-light-top.png", alt="").img-full 
+                    img( id="project-calc__light-img" src="", alt="").img-full 
                 .project-calc__part.project-calc__warming 
-                    img(id="project-calc__warming-img" src="img/project-calc/glass-default/project-calc-default-warming-default.png", alt="").img-full
+                    img(id="project-calc__warming-img" src="", alt="").img-full
                 .project-calc__part.project-calc__siding 
-                    img(id="project-calc__siding-img" src="img/project-calc/glass-default/project-calc-default-siding-metall.png", alt="").img-full 
+                    img(id="project-calc__siding-img" src="", alt="").img-full 
                 .project-calc__part.project-calc__floor
-                    img(id="project-calc__floor-img" src="img/project-calc/glass-default/project-calc-default-kovrolin-1.png", alt="").img-full
+                    img(id="project-calc__floor-img" src="", alt="").img-full
                 .project-calc__part.project-calc__floor-warm
-                    img(id="project-calc__floor-warm-img" src="img/project-calc/warm-floor.png", alt="").img-full  
+                    img(id="project-calc__floor-warm-img" style={'display':'none'} src="img/project-calc/warm-floor.png", alt="").img-full  
                 .project-calc__part.project-calc__walls 
-                    img(id="project-calc__walls-img" src="img/project-calc/glass-default/project-calc-default-gipsocarton.png", alt="").img-full
+                    img(id="project-calc__walls-img" src="", alt="").img-full
                 .project-calc__part.project-calc__shkaf
-                    img(id="project-calc__shkaf-img" src="img/project-calc/glass-default/project-calc-default-cupboard.png", alt="").img-full
+                    img(id="project-calc__shkaf-img" src="", alt="").img-full
             .project-calc__control.project-calc__control-right
                 div(id="typeof-walls-control").project-calc__group.project-calc__group-mobile 
                     .project-calc__name Внутрення отделка 
                     .project-calc__tab-nav
-                        div(data-tab="gipsokarton").project-calc__switch.project-calc__switch-active 
+                        div(data-tab="gipsokarton").project-calc__switch 
                             .project-calc__circle 
                             .project-calc__text Гипсокартон
                         div(data-tab="wood").project-calc__switch
@@ -228,36 +228,36 @@
                             .project-calc__circle 
                             .project-calc__text ПВХ вагонка
                     .project-calc__tab-content
-                        div(data-tab-content="gipsokarton").project-calc__tab-item.project-calc__tab-active 
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-gipsocarton.png" data-src-v2="img/project-calc/glass-france/project-calc-france-gipsocarton.png").project-calc__round.project-calc__round-big.project-calc__round-active
+                        div(data-tab-content="gipsokarton").project-calc__tab-item 
+                            button(data-value="Зеленый" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-gipsocarton.png" data-src-v2="img/project-calc/glass-france/project-calc-france-gipsocarton.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-gipsokarton.png", alt="").project-calc__palette
                         div(data-tab-content="wood").project-calc__tab-item 
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-wooden.png" data-src-v2="img/project-calc/glass-france/project-calc-france-wooden.png").project-calc__round.project-calc__round-big
+                            button(data-value="Стандарт" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-wooden.png" data-src-v2="img/project-calc/glass-france/project-calc-france-wooden.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-wooden.png", alt="").project-calc__palette
                         div(data-tab-content="pvh-panel").project-calc__tab-item 
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-1.png").project-calc__round.project-calc__round-big
+                            button(data-value="Мозайка" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-1.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-panel-1.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-2.png").project-calc__round.project-calc__round-big
+                            button(data-value="Дерево Ланцелот" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-2.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-panel-2.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-3.png").project-calc__round.project-calc__round-big
+                            button(data-value="Дерево Орех" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-3.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-panel-3.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-4.png").project-calc__round.project-calc__round-big
+                            button(data-value="Жемчужный шелк" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-4.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-panel-4.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-5.png").project-calc__round.project-calc__round-big
+                            button(data-value="Темно-оливковый" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-panel-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-panel-5.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-panel-5.png", alt="").project-calc__palette
                         div(data-tab-content="pvh-vagonka").project-calc__tab-item
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-1.png").project-calc__round.project-calc__round-big
+                            button(data-value="Белый" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-1.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-1.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-2.png").project-calc__round.project-calc__round-big
+                            button(data-value="Зеленый" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-2.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-2.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-3.png").project-calc__round.project-calc__round-big
+                            button(data-value="Синий" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-3.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-3.png", alt="").project-calc__palette
-                            button(data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-4.png").project-calc__round.project-calc__round-big
+                            button(data-value="Бежевый" data-group="typeof-walls" data-src="img/project-calc/glass-default/project-calc-default-pvh-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-pvh-4.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/otdelka-sten-pvh-4.png", alt="").project-calc__palette
                 div(id="typeof-floor-control").project-calc__group.project-calc__group-mobile 
                     .project-calc__name Отделка пола  
                     .project-calc__tab-nav
-                        div(data-tab="kovrolin").project-calc__switch.project-calc__switch-active
+                        div(data-tab="kovrolin").project-calc__switch
                             .project-calc__circle 
                             .project-calc__text Ковролин
                         div(data-tab="laminat").project-calc__switch
@@ -270,53 +270,52 @@
                             .project-calc__circle 
                             .project-calc__text Плитка
                     .project-calc__tab-content
-                        div(data-tab-content="kovrolin").project-calc__tab-item.project-calc__tab-active 
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-1.png").project-calc__round.project-calc__round-big.project-calc__round-active
+                        div(data-tab-content="kovrolin").project-calc__tab-item 
+                            button(data-value="Ковролин-1" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-1.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-kovrolin-1.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-2.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ковролин-2" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-2.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-kovrolin-2.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-3.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ковролин-3" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-3.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-kovrolin-3.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-4.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ковролин-4" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-4.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-kovrolin-4.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-5.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ковролин-5" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-kovrolin-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-kovrolin-5.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-kovrolin-5.png", alt="").project-calc__palette
                         div(data-tab-content="laminat").project-calc__tab-item 
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-1.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ламинат-1" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-1.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-laminat-1.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-2.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ламинат-2" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-2.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-laminat-2.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-3.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ламинат-3" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-3.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-laminat-3.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-4.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ламинат-4" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-4.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-laminat-4.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-5.png").project-calc__round.project-calc__round-big
+                            button(data-value="Ламинат-5" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-laminat-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-laminat-5.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-laminat-5.png", alt="").project-calc__palette
                         div(data-tab-content="linoleum").project-calc__tab-item 
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-1.png").project-calc__round.project-calc__round-big
+                            button(data-value="Линолеум-1" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-1.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-linoleum-1.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-2.png").project-calc__round.project-calc__round-big
+                            button(data-value="Линолеум-2" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-2.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-linoleum-2.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-3.png").project-calc__round.project-calc__round-big
+                            button(data-value="Линолеум-3" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-3.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-linoleum-3.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-4.png").project-calc__round.project-calc__round-big
+                            button(data-value="Линолеум-4" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-4.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-linoleum-4.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-5.png").project-calc__round.project-calc__round-big
+                            button(data-value="Линолеум-5" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-linoleum-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-linoleum-5.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-linoleum-5.png", alt="").project-calc__palette                    
                         div(data-tab-content="plitka").project-calc__tab-item
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-1.png").project-calc__round.project-calc__round-big
+                            button(data-value="Плитка-1" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-1.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-1.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-plitka-1.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-2.png").project-calc__round.project-calc__round-big
+                            button(data-value="Плитка-2" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-2.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-2.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-plitka-2.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-3.png").project-calc__round.project-calc__round-big
+                            button(data-value="Плитка-3" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-3.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-3.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-plitka-3.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-4.png").project-calc__round.project-calc__round-big
+                            button(data-value="Плитка-4" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-4.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-4.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-plitka-4.png", alt="").project-calc__palette
-                            button(data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-5.png").project-calc__round.project-calc__round-big
+                            button(data-value="Плитка-5" data-group="typeof-floor" data-src="img/project-calc/glass-default/project-calc-default-plitka-5.png" data-src-v2="img/project-calc/glass-france/project-calc-france-plitka-5.png").project-calc__round.project-calc__round-big
                                 img(src="img/project-calc/floor-plitka-5.png", alt="").project-calc__palette
-                .project-calc__group.project-calc__group-mobile 
-                    .project-calc__name   
-                    input(id="radio-typeof-warm-floor" type="checkbox" value="Теплый пол" checked).project-calc__radio.project-calc__checkbox
+                .project-calc__group.project-calc__group-mobile   
+                    input(id="radio-typeof-warm-floor" type="checkbox" value="Теплый пол" ).project-calc__radio.project-calc__checkbox
                     label(for="radio-typeof-warm-floor" data-group="typeof-warm-floor" ).project-calc__switch
                         .project-calc__circle 
                         div(style={"font-weight": "bold"}).project-calc__text Теплый пол 
